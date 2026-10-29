@@ -1,0 +1,12 @@
+.button {
+  anchor-name: --my-button;
+}
+
+.tooltip {
+  position-anchor: --my-button;
+  /* position-area: top; */
+  /* position-try-fallbacks: bottom, right, left; */
+
+  position: fixed;
+  margin: 12px;
+}

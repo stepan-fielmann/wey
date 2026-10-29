@@ -1,0 +1,26 @@
+{
+  "name": "wey",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Playground for five modern browser features: the classic way, the exercise, and the finished code.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "npm install && npm run setup:livecodes",
+    "setup:livecodes": "node scripts/setup-livecodes.mjs",
+    "livecodes": "node scripts/serve-livecodes.mjs",
+    "dev": "node scripts/dev.mjs",
+    "dev:app": "vite",
+    "build": "vite build",
+    "postbuild": "node scripts/copy-livecodes-app.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "livecodes": "0.14.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}

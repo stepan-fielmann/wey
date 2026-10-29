@@ -1,0 +1,52 @@
+<main class="stage">
+  <form class="field">
+    <div class="field-control">
+      <label id="owner-label" for="owner">Owner</label>
+      <select id="owner" name="owner" class="visually-hidden" tabindex="-1" aria-hidden="true">
+        <option value="ava">Ava Lindqvist</option>
+        <option value="bilal">Bilal Haddad</option>
+        <option value="chen">Chen Wei</option>
+        <option value="emeka" disabled>Emeka Okafor</option>
+        <option value="freya">Freya Nakamura</option>
+        <option value="hana">Hana Kovač</option>
+      </select>
+      <div role="combobox" tabindex="0" aria-labelledby="owner-label" aria-expanded="false" aria-controls="owner-list">
+        <img src="{{images}}/avatars/ava.svg" alt="">
+        <b>Ava Lindqvist</b>
+        <small>Design lead</small>
+      </div>
+      <ul role="listbox" id="owner-list" aria-labelledby="owner-label" hidden>
+        <li role="option" id="owner-ava" aria-selected="true">
+          <img src="{{images}}/avatars/ava.svg" alt="">
+          <b>Ava Lindqvist</b>
+          <small>Design lead</small>
+        </li>
+        <li role="option" id="owner-bilal" aria-selected="false">
+          <img src="{{images}}/avatars/bilal.svg" alt="">
+          <b>Bilal Haddad</b>
+          <small>Frontend engineer</small>
+        </li>
+        <li role="option" id="owner-chen" aria-selected="false">
+          <img src="{{images}}/avatars/chen.svg" alt="">
+          <b>Chen Wei</b>
+          <small>Accessibility specialist</small>
+        </li>
+        <li role="option" id="owner-emeka" aria-disabled="true">
+          <img src="{{images}}/avatars/emeka.svg" alt="">
+          <b>Emeka Okafor</b>
+          <small>On leave</small>
+        </li>
+        <li role="option" id="owner-freya" aria-selected="false">
+          <img src="{{images}}/avatars/freya.svg" alt="">
+          <b>Freya Nakamura</b>
+          <small>Data visualisation</small>
+        </li>
+        <li role="option" id="owner-hana" aria-selected="false">
+          <img src="{{images}}/avatars/hana.svg" alt="">
+          <b>Hana Kovač</b>
+          <small>Engineering manager</small>
+        </li>
+      </ul>
+    </div>
+  </form>
+</main>

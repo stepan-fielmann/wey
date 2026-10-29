@@ -1,0 +1,29 @@
+<main class="stage">
+  <form class="field">
+    <div class="field-control">
+      <label for="phone-code">Phone code</label>
+      <!-- Windows shows letters (DE, FR…) instead of flags -->
+      <select id="phone-code" name="phone-code">
+        <optgroup label="Suggested">
+          <option value="de">🇩🇪 Germany +49</option>
+          <option value="pl">🇵🇱 Poland +48</option>
+        </optgroup>
+        <!-- A divider: all browsers since 2024 -->
+        <hr />
+        <optgroup label="Europe">
+          <option value="fr">🇫🇷 France +33</option>
+          <option value="it">🇮🇹 Italy +39</option>
+          <option value="no">🇳🇴 Norway +47</option>
+          <option value="es">🇪🇸 Spain +34</option>
+        </optgroup>
+        <optgroup label="Americas">
+          <option value="ca">🇨🇦 Canada +1</option>
+          <option value="us">🇺🇸 United States +1</option>
+        </optgroup>
+        <optgroup label="Asia (soon)" disabled>
+          <option value="jp">🇯🇵 Japan +81</option>
+        </optgroup>
+      </select>
+    </div>
+  </form>
+</main>

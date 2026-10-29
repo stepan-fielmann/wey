@@ -1,0 +1,22 @@
+/* Switch off the native look of the closed control */
+select {
+  appearance: none;
+  width: 100%;
+  min-height: 3.6rem;
+  padding: 0.4rem 2.6rem 0.4rem 0.8rem;
+  font: inherit;
+  color: inherit;
+  background: #fff url("{{images}}/arrow.svg") no-repeat right 1rem center;
+  border: 1px solid #cbc4b4;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4636c9;
+  box-shadow: 0 0 0 3px #eceaff;
+}
+
+/* The list that opens is drawn by the browser and the OS:
+   text only, no layout, almost no styles */

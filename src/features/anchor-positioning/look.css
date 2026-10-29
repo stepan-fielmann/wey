@@ -1,0 +1,55 @@
+/* Looks only, shared by before and after. No positioning logic here. */
+
+/* The scrollable area fills the preview; its content is much taller. */
+.scroller {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+}
+
+.content {
+  position: relative;
+  height: 280%;
+  background: #fbfaff radial-gradient(circle at 1px 1px, #dcd8f2 1px, transparent 1.5px) 0 0 / 24px 24px;
+}
+
+/* Starts in the middle of the visible part (the content is 280% of the preview height). */
+.button {
+  position: absolute;
+  left: calc(50% - 3.5em);
+  top: 20%;
+  padding: 0.75rem 1.2rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #e0532f, #c13b64);
+  border: 0;
+  border-radius: 0.9rem;
+  box-shadow: 0 10px 24px -10px rgb(193 59 100 / 0.8);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  /* An absolute box near the right edge would shrink and wrap "Drag me" otherwise */
+  white-space: nowrap;
+}
+
+.tooltip {
+  z-index: 1;
+  width: 16rem;
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  color: #f4f2fa;
+  background: #1f1d2b;
+  border-radius: 0.9rem;
+  box-shadow: 0 18px 40px -18px rgb(20 18 40 / 0.7);
+}
+
+.tooltip strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.tooltip span {
+  color: #c9c5dc;
+  font-size: 0.9rem;
+}

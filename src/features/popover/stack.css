@@ -1,0 +1,37 @@
+.popup {
+  width: 14rem;
+  color: #fff;
+}
+
+#red {
+  translate: -6rem -3rem;
+}
+
+#green {
+  translate: 5.5rem -0.5rem;
+}
+
+#blue {
+  translate: -1.5rem 3rem;
+}
+
+/* Every popover and the button that opens it share a colour */
+#red,
+.stage > [data-raise="red"] {
+  background: #c8362f;
+}
+
+#green,
+.stage > [data-raise="green"] {
+  background: #1f7a4d;
+}
+
+#blue,
+.stage > [data-raise="blue"] {
+  background: #2f52b5;
+}
+
+/* The buttons inside a popover stay plain, so the colours are not everywhere at once */
+.popup-actions button {
+  border-color: #fff;
+}

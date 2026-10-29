@@ -1,0 +1,10 @@
+.report-header {
+  /* container-type: scroll-state; */
+
+  @container scroll-state(stuck: top) {
+    .surface {
+      background: #f4f2ff;
+      box-shadow: 0 14px 22px -14px rgb(0 0 0 / 0.55);
+    }
+  }
+}

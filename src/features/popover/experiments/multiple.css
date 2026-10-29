@@ -1,0 +1,12 @@
+/* Overlapping positions on the right-hand side of the preview. */
+[popover] {
+  inset: auto;
+  margin: 0;
+}
+
+#auto-a { top: 20px; right: 60px; }
+#auto-b { top: 60px; right: 20px; }
+
+/* z-index does not decide the order in the top layer: the last shown popover is on top. */
+#manual-c { top: 230px; right: 60px; z-index: 2147483647; }
+#manual-d { top: 270px; right: 20px; z-index: 1; }

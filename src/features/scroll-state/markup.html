@@ -1,0 +1,30 @@
+<main class="stage">
+  <div class="report" tabindex="0" aria-label="Quarterly report">
+    <section class="hero">
+      <div>
+        <h2>How the platform did this quarter</h2>
+        <p>Scroll down. The header below sticks to the top, and should get a shadow only while it is stuck.</p>
+      </div>
+      <img src="{{images}}/scenes/violet-peaks.svg" alt="" width="400" height="340" />
+    </section>
+    <div class="report-header">
+      <div class="surface">
+        <h3>Performance overview</h3>
+        <nav><span>Latency</span><span>Errors</span><span>Costs</span></nav>
+      </div>
+    </div>
+    <div class="content">
+      <h4>Latency</h4>
+      <p>Median request latency fell for the third quarter in a row. Most of the gain came from moving session lookups to the edge cache, which removed a round trip for about two thirds of requests.</p>
+      <p>The long tail remains in report exports, which still run on the old worker pool. They move with the billing migration next month.</p>
+      <h4>Errors</h4>
+      <p>Error budgets held in every region. The one breach, a forty-minute partial outage in the payments callback, came from an expired certificate. Rotation is now automated.</p>
+      <p>Client-side errors dropped after the design system update removed two legacy date pickers.</p>
+      <h4>Costs</h4>
+      <p>Compute went down 8% while storage grew 12%, mostly from keeping full-resolution uploads. A lifecycle policy for originals older than a year would recover most of that.</p>
+      <p>Network costs are flat. The CDN contract renews in January.</p>
+      <h4>Next quarter</h4>
+      <p>Retire the old worker pool, finish the billing migration and publish the accessibility review of the booking flow.</p>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,136 @@
+/* Looks only. The views use scene.css now; this is kept for the experiments in experiments/. */
+
+.stage {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background: #f8f6f1;
+}
+
+.card {
+  width: 20rem;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e4dfd4;
+  border-radius: 1rem;
+  box-shadow: 0 18px 40px -26px rgb(28 27 34 / 0.5);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #6f6c7d;
+}
+
+.share-button {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: #1c1b22;
+  border: 0;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+/* The popup itself */
+.popup {
+  width: 24rem;
+  padding: 1.4rem 1.5rem;
+  color: #1c1b22;
+  background: #fff;
+  border: 0;
+  border-radius: 1.1rem;
+  box-shadow: 0 30px 70px -20px rgb(0 0 0 / 0.5);
+}
+
+.popup h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.25rem;
+}
+
+.popup p {
+  margin: 0 0 1rem;
+  color: #6f6c7d;
+}
+
+.popup input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: #474553;
+  background: #f5f2ec;
+  border: 1px solid #e4dfd4;
+  border-radius: 0.6rem;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.popup-actions button {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  color: #1c1b22;
+  background: #fff;
+  border: 1px solid #cbc4b4;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.popup-actions button:first-child {
+  color: #fff;
+  background: #4636c9;
+  border-color: #4636c9;
+}
+
+/* Decoration only, the same on both pages: a short fade-in on opening */
+.popup {
+  animation: pop-in 0.2s ease-out;
+}
+
+.backdrop,
+.popup::backdrop {
+  animation: fade-in 0.2s ease-out;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    scale: 0.96;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}

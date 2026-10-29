@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Sunset over desert dunes">
+<title>Sunset over desert dunes</title>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffe8c2"/><stop offset="100%" stop-color="#ffc9a0"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#sky)"/><circle cx="280" cy="96" r="48" fill="#ff8552"/><path d="M0 300 L0 172.9 C66.7 172.9 66.7 166 133.3 166 C200 166 200 160.5 266.7 160.5 C333.3 160.5 333.3 151 400 151 L400 300 Z" fill="#f2a65a"/><path d="M0 300 L0 202.4 C66.7 202.4 66.7 193.9 133.3 193.9 C200 193.9 200 203.1 266.7 203.1 C333.3 203.1 333.3 197.8 400 197.8 L400 300 Z" fill="#e07a3f"/><path d="M0 300 L0 237.9 C66.7 237.9 66.7 222.3 133.3 222.3 C200 222.3 200 241.8 266.7 241.8 C333.3 241.8 333.3 235.8 400 235.8 L400 300 Z" fill="#b4542b"/>
+</svg>

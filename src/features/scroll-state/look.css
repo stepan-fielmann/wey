@@ -1,0 +1,128 @@
+/* Looks only, shared by before and after. The header is sticky on both pages;
+   only the shadow differs. */
+
+.stage {
+  background: #f8f6f1;
+}
+
+.report {
+  position: absolute;
+  inset: 1.5rem;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e4dfd4;
+  border-radius: 1rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f2efff, #fff6ef);
+}
+
+.hero h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0;
+  color: #55536a;
+}
+
+.hero img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.9rem;
+}
+
+.report-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.surface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e4dfd4;
+  transition: box-shadow 0.25s, background-color 0.25s;
+}
+
+.surface h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.surface nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #77748a;
+}
+
+.content {
+  max-width: 40rem;
+  padding: 1rem 2rem 60vh;
+}
+
+.content h4 {
+  margin: 1.6rem 0 0.4rem;
+  font-size: 1.25rem;
+}
+
+.content p {
+  line-height: 1.65;
+  color: #474553;
+}
+
+/* "Show sentinel" toggle (before page only): paints the invisible 1px
+   sentinel red. The ring is drawn outside, so it stays 1px tall. */
+.sentinel-toggle {
+  position: absolute;
+  right: 2.4rem;
+  bottom: 2.4rem;
+  z-index: 5;
+  padding: 0.55rem 0.9rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #b42318;
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid #f1b8b0;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px -10px rgb(0 0 0 / 0.4);
+}
+
+.sentinel-toggle[aria-pressed="true"] {
+  color: #fff;
+  background: #e5372b;
+  border-color: #e5372b;
+}
+
+.show-sentinel .sentinel {
+  position: relative;
+  background: #e5372b;
+  box-shadow: 0 0 0 1px #e5372b;
+}
+
+.show-sentinel .sentinel::after {
+  content: "sentinel";
+  position: absolute;
+  right: 2rem;
+  bottom: 3px;
+  font-family: ui-monospace, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e5372b;
+}

@@ -1,0 +1,63 @@
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+/* The arrow is a real part of the select: it can be placed and animated */
+select::picker-icon {
+  align-self: center;
+  transition: rotate 0.2s;
+}
+
+select:open::picker-icon {
+  rotate: 180deg;
+}
+
+select:open {
+  outline-color: #4636c9;
+  box-shadow: 0 0 0 3px #eceaff;
+}
+
+/* A copy of the chosen option, shown in the closed control */
+selectedcontent {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0 0.7rem;
+}
+
+/* The list (picker) */
+::picker(select) {
+  max-height: 17rem;
+  margin-block: 0.4rem;
+  padding: 0.35rem;
+  border: 1px solid #cbc4b4;
+  border-radius: 0.9rem;
+  box-shadow: 0 24px 50px -20px rgb(28 27 34 / 0.45);
+}
+
+option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0 0.7rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.6rem;
+}
+
+option:hover,
+option:focus-visible {
+  background: #f3f0e8;
+}
+
+option:checked {
+  background: #eceaff;
+}
+
+option:disabled {
+  opacity: 0.4;
+}
+
+option::checkmark {
+  display: none;
+}

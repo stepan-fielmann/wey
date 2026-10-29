@@ -1,0 +1,64 @@
+/* Preview frame shared by every view (from Lunch and Learn Simple's simple.css).
+   Nothing in here is part of any demo. */
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: clamp(15px, 0.55vw + 9px, 21px);
+  color: #1c1b22;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid #1f6feb;
+  outline-offset: 2px;
+}
+
+/* The demo area fills the preview. */
+.stage {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Note shown by unsupported.js when the browser lacks the feature. */
+.unsupported {
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.8rem;
+  z-index: 100;
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  max-width: min(26rem, calc(100% - 1.6rem));
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #b42318;
+  background: rgb(253 233 230 / 0.95);
+  border: 1px solid #f1b8b0;
+  border-radius: 0.6rem;
+  pointer-events: none;
+}
+
+.unsupported::before {
+  content: '';
+  flex: none;
+  width: 0.45rem;
+  height: 0.45rem;
+  background: #e5372b;
+  border-radius: 50%;
+}
+
+.unsupported b {
+  color: #8f1d14;
+}

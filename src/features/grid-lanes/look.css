@@ -1,0 +1,54 @@
+/* Looks only, shared by all three pages. */
+
+.stage {
+  background: #f1eee7;
+}
+
+.scroll {
+  position: absolute;
+  inset: 0;
+  padding: 1.4rem;
+  overflow-y: auto;
+}
+
+.tile {
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e4dfd4;
+  border-radius: 0.9rem;
+  box-shadow: 0 14px 30px -22px rgb(28 27 34 / 0.55);
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tile figcaption {
+  padding: 0.6rem 0.8rem 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.tile figcaption span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #77748a;
+}
+
+/* "Load more" (more.js) */
+.more {
+  display: block;
+  margin: 1.4rem auto 0.4rem;
+  padding: 0.65rem 1.3rem;
+  font: inherit;
+  font-weight: 700;
+  color: #4636c9;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #d9d4f7;
+  border-radius: 999px;
+}

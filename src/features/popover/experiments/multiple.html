@@ -1,0 +1,39 @@
+<fieldset>
+  <legend>popover="auto"</legend>
+  <button popovertarget="auto-a">Toggle auto A</button>
+  <button popovertarget="auto-b">Toggle auto B</button>
+  <button type="button" data-show-both="auto-a auto-b">JS: showPopover() on A, then on B</button>
+</fieldset>
+
+<fieldset>
+  <legend>popover="manual"</legend>
+  <button popovertarget="manual-c">Toggle manual C</button>
+  <button popovertarget="manual-d">Toggle manual D</button>
+  <button type="button" data-show-both="manual-c manual-d">JS: showPopover() on C, then on D</button>
+  <button type="button" data-reshow="manual-c">Re-show C (hide + show)</button>
+</fieldset>
+
+<div id="auto-a" popover>
+  <h3>Auto A</h3>
+  <p>Opening another unrelated auto popover closes me.</p>
+  <p><button popovertarget="auto-b">Open B from inside A (nested)</button></p>
+  <button popovertarget="auto-a" popovertargetaction="hide">Close A</button>
+</div>
+
+<div id="auto-b" popover="auto">
+  <h3>Auto B</h3>
+  <p>Opened from the page: A closes. Opened from inside A: A stays.</p>
+  <button popovertarget="auto-b" popovertargetaction="hide">Close B</button>
+</div>
+
+<div id="manual-c" popover="manual">
+  <h3>Manual C (z-index: max)</h3>
+  <p>Must be closed explicitly.</p>
+  <button popovertarget="manual-c" popovertargetaction="hide">Close C</button>
+</div>
+
+<div id="manual-d" popover="manual">
+  <h3>Manual D (z-index: 1)</h3>
+  <p>Must be closed explicitly.</p>
+  <button popovertarget="manual-d" popovertargetaction="hide">Close D</button>
+</div>

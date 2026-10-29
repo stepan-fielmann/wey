@@ -1,0 +1,33 @@
+/* The closed control: the box, styled as far as a native select lets us. It is kept out of the
+   editors so that only the new feature is on display, and the code on the page can override it
+   (plain `select` selectors). */
+
+select {
+  width: 100%;
+  min-height: 3.6rem;
+  padding: 0.4rem 0.8rem;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+  border-radius: 0.8rem;
+  cursor: pointer;
+
+  /* A native select's arrow is painted at the inner edge of the border and no padding can
+     reach it, so a wide right border is the only way to move it away from the corner. The
+     visible edge of the control is drawn with an outline, which leaves that border free. */
+  border: 0;
+  border-right: 1rem solid transparent;
+  outline: 1px solid #cbc4b4;
+  outline-offset: -1px;
+}
+
+select:focus-visible {
+  outline-color: #4636c9;
+  box-shadow: 0 0 0 3px #eceaff;
+}
+
+/* Once the arrow is a real element it is laid out inside that wide border, so it comes back */
+select::picker-icon {
+  content: url("{{images}}/arrow.svg");
+  margin-right: -0.75rem;
+}

@@ -1,0 +1,4 @@
+.popup::backdrop {
+  background: rgb(20 18 30 / 0.5);
+  backdrop-filter: blur(2px);
+}

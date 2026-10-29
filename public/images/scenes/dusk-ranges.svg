@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 620" width="400" height="620" role="img" aria-label="Dusk over layered ranges">
+<title>Dusk over layered ranges</title>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2b2d6e"/><stop offset="50%" stop-color="#a14a76"/><stop offset="100%" stop-color="#f39c6b"/></linearGradient></defs>
+<rect width="400" height="620" fill="url(#sky)"/><circle cx="270.2" cy="186" r="48" fill="#ffd59e" opacity=".95"/><path d="M0 620 L0 276 L80 208.7 L160 274 L240 184.1 L320 277.1 L400 177.1 L400 620 Z" fill="#3a2f5b"/><path d="M0 620 L0 371.6 L57.1 366.4 L114.3 358 L171.4 294.6 L228.6 377.3 L285.7 340 L342.9 345.4 L400 334 L400 620 Z" fill="#231c3d"/><path d="M0 620 L0 472.2 L44.4 444.1 L88.9 452.3 L133.3 404.4 L177.8 468.4 L222.2 443.8 L266.7 459.2 L311.1 447.4 L355.6 465.5 L400 452.2 L400 620 Z" fill="#120e24"/>
+</svg>

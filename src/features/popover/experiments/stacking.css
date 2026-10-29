@@ -1,0 +1,15 @@
+.popup::backdrop {
+  background: rgb(20 18 30 / 0.5);
+  backdrop-filter: blur(2px);
+}
+
+/* z-index does not decide the order in the top layer: the last shown popover is on top. */
+#share-1 {
+  translate: -3rem -2.5rem;
+  z-index: 2147483647;
+}
+
+#share-2 {
+  translate: 3rem 2.5rem;
+  z-index: 1;
+}

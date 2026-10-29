@@ -1,0 +1,44 @@
+<main class="stage">
+  <article class="card">
+    <img src="{{images}}/scenes/glacier-lake-wide.svg" alt="" width="800" height="450" />
+    <div class="card-body">
+      <div>
+        <h2>Riverside redesign</h2>
+        <p>Due in three weeks</p>
+      </div>
+      <div class="share">
+        <button class="share-button" popovertarget="share-1">Share</button>
+        <div class="popup" id="share-1" popover="manual">
+          <h3>Share “Riverside redesign”</h3>
+          <p>Anyone with the link can view.</p>
+          <input value="https://example.com/p/1" readonly aria-label="Link" />
+          <div class="popup-actions">
+            <button popovertarget="share-2" popovertargetaction="show">Also share “Harbour app”</button>
+            <button popovertarget="share-1" popovertargetaction="hide">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <img src="{{images}}/scenes/coral-sea-wide.svg" alt="" width="800" height="450" />
+    <div class="card-body">
+      <div>
+        <h2>Harbour app</h2>
+        <p>Due next month</p>
+      </div>
+      <div class="share">
+        <button class="share-button" popovertarget="share-2">Share</button>
+        <div class="popup" id="share-2" popover="manual">
+          <h3>Share “Harbour app”</h3>
+          <p>Anyone with the link can view.</p>
+          <input value="https://example.com/p/2" readonly aria-label="Link" />
+          <div class="popup-actions">
+            <button popovertarget="share-1" popovertargetaction="show">Also share “Riverside redesign”</button>
+            <button popovertarget="share-2" popovertargetaction="hide">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
