@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Geometric composition of circles and squares">
+<title>Geometric composition of circles and squares</title>
+<defs></defs>
+<rect width="400" height="400" fill="#f6efe3"/><path d="M0 133.3 A133.3 133.3 0 0 1 133.3 0 L133.3 133.3 Z" fill="#1d3557"/><path d="M133.3 0 L266.7 133.3 L133.3 133.3 Z" fill="#2a9d8f"/><path d="M266.7 133.3 A133.3 133.3 0 0 1 400 0 L400 133.3 Z" fill="#e63946"/><rect x="16" y="149.3" width="101.3" height="101.3" rx="13.3" fill="#264653"/><path d="M133.3 133.3 L266.7 266.7 L133.3 266.7 Z" fill="#2a9d8f"/><path d="M266.7 266.7 A133.3 133.3 0 0 1 400 133.3 L400 266.7 Z" fill="#1d3557"/><path d="M0 400 A133.3 133.3 0 0 1 133.3 266.7 L133.3 400 Z" fill="#2a9d8f"/><circle cx="200" cy="333.3" r="50.7" fill="#2a9d8f"/><rect x="282.7" y="282.7" width="101.3" height="101.3" rx="13.3" fill="#1d3557"/>
+</svg>

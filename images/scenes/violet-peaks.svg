@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340" role="img" aria-label="Violet mountain ranges at dawn">
+<title>Violet mountain ranges at dawn</title>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffd6a5"/><stop offset="50%" stop-color="#ffadad"/><stop offset="100%" stop-color="#bdb2ff"/></linearGradient></defs>
+<rect width="400" height="340" fill="url(#sky)"/><circle cx="139.7" cy="102" r="40.8" fill="#fff3c4" opacity=".95"/><path d="M0 340 L0 139.7 L80 144.9 L160 140.7 L240 108.9 L320 145.2 L400 137.4 L400 340 Z" fill="#8e7dbe"/><path d="M0 340 L0 190.4 L57.1 197.2 L114.3 198.5 L171.4 168.3 L228.6 199.7 L285.7 189.4 L342.9 189.9 L400 189.2 L400 340 Z" fill="#6a5a9c"/><path d="M0 340 L0 247.6 L44.4 228.4 L88.9 255.6 L133.3 232.7 L177.8 244 L222.2 219.5 L266.7 253.7 L311.1 219.2 L355.6 259.5 L400 227 L400 340 Z" fill="#43386e"/>
+</svg>
